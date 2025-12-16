@@ -1,6 +1,6 @@
 /* ===== RESET BÁSICO ===== */
 * {
-    margin: 0;
+    image.png    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
@@ -10,16 +10,12 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #f4f6f8;
     color: #333;
-    padding: 40px;
     line-height: 1.7;
-}
 
-/* ===== CONTENEDOR PRINCIPAL ===== */
-body {
     max-width: 900px;
     margin: auto;
-    background-color: #ffffff;
     padding: 50px;
+    background-color: #ffffff;
     border-radius: 8px;
 }
 
@@ -69,20 +65,42 @@ li {
     margin-bottom: 12px;
 }
 
-/* ===== ENLACE DE PROYECTOS ===== */
+/* ===== ENLACES GENERALES ===== */
 a {
-    display: inline-block;
-    margin-top: 40px;
-    padding: 12px 18px;
-    background-color: #2563eb;
-    color: #ffffff;
     text-decoration: none;
-    border-radius: 6px;
-    font-weight: bold;
 }
 
-a:hover {
+/* ===== CONTENEDOR DE BOTONES ===== */
+.botones {
+    margin-top: 40px;
+    display: flex;
+    gap: 40px;                 
+}
+
+/* ===== BOTONES IGUALES ===== */
+.btn {
+    padding: 12px 22px;
+    min-width: 140px;        
+    text-align: center;
+
+    background-color: #2563eb;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 8px;
+
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+/* Hover */
+.btn:hover {
     background-color: #1e40af;
+}
+
+/* Click */
+.btn:active {
+    transform: scale(0.97);
 }
 
 /* ===== RESPONSIVE ===== */
@@ -98,5 +116,8 @@ a:hover {
     h2 {
         font-size: 20px;
     }
-}
 
+    .botones {
+        gap: 25px;
+    }
+}
