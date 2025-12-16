@@ -1,0 +1,102 @@
+/* ===== RESET BÁSICO ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== ESTILOS GENERALES ===== */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+    padding: 40px;
+    line-height: 1.7;
+}
+
+/* ===== CONTENEDOR PRINCIPAL ===== */
+body {
+    max-width: 900px;
+    margin: auto;
+    background-color: #ffffff;
+    padding: 50px;
+    border-radius: 8px;
+}
+
+/* ===== IMAGEN DE PERFIL ===== */
+img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin-bottom: 30px;
+}
+
+/* ===== ENCABEZADO ===== */
+h1 {
+    font-size: 32px;
+    margin-bottom: 5px;
+    color: #1f2933;
+}
+
+p strong {
+    font-size: 18px;
+    color: #4b5563;
+}
+
+/* ===== SECCIONES ===== */
+h2 {
+    font-size: 22px;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    color: #2563eb;
+    border-bottom: 2px solid #e5e7eb;
+    padding-bottom: 6px;
+}
+
+/* ===== TEXTO ===== */
+p {
+    margin-bottom: 15px;
+}
+
+/* ===== LISTAS ===== */
+ul {
+    margin-left: 20px;
+}
+
+li {
+    margin-bottom: 12px;
+}
+
+/* ===== ENLACE DE PROYECTOS ===== */
+a {
+    display: inline-block;
+    margin-top: 40px;
+    padding: 12px 18px;
+    background-color: #2563eb;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+a:hover {
+    background-color: #1e40af;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    body {
+        padding: 25px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+}
+
