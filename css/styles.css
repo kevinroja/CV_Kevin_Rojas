@@ -120,4 +120,24 @@ a {
     .botones {
         gap: 25px;
     }
+
+    footer {
+        background-color: #f2f2f2;
+        text-align: center;
+        padding: 15px;
+        margin-top: 30px;
+        font-size: 14px;
+        color: #333;
+        border-top: 2px solid #ccc;
+    }
+    
+    footer a {
+        color: #89379c;
+        text-decoration: none;
+        margin: 0 5px;
+    }
+    
+    footer a:hover {
+        text-decoration: underline;
+    }
 }
