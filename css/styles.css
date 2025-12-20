@@ -1,6 +1,6 @@
 /* ===== RESET BÁSICO ===== */
 * {
-    image.png    margin: 0;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
@@ -8,10 +8,8 @@
 /* ===== ESTILOS GENERALES ===== */
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #f4f6f8;
     color: #333;
     line-height: 1.7;
-
     max-width: 900px;
     margin: auto;
     padding: 50px;
@@ -19,7 +17,7 @@ body {
     border-radius: 8px;
 }
 
-/* ===== IMAGEN DE PERFIL ===== */
+/* ===== IMAGEN ===== */
 img {
     width: 160px;
     height: 160px;
@@ -29,19 +27,13 @@ img {
     margin-bottom: 30px;
 }
 
-/* ===== ENCABEZADO ===== */
+/* ===== ENCABEZADOS ===== */
 h1 {
     font-size: 32px;
     margin-bottom: 5px;
     color: #1f2933;
 }
 
-p strong {
-    font-size: 18px;
-    color: #4b5563;
-}
-
-/* ===== SECCIONES ===== */
 h2 {
     font-size: 22px;
     margin-top: 40px;
@@ -51,56 +43,78 @@ h2 {
     padding-bottom: 6px;
 }
 
-/* ===== TEXTO ===== */
+/* ===== TEXTO GENERAL ===== */
 p {
     margin-bottom: 15px;
+    font-size: 16px;
 }
 
-/* ===== LISTAS ===== */
-ul {
-    margin-left: 20px;
+/* ===== SECCIONES UNIFORMES (Acerca de, Perfil, Educación) ===== */
+/* Seleccionamos los párrafos, elementos de lista y negritas dentro de etiquetas <section> */
+section p,
+section li,
+section strong {
+    font-weight: normal !important; /* Quita la negrita por completo */
 }
 
-li {
-    margin-bottom: 12px;
+section ul {
+    list-style: none; /* Quita los puntos de viñeta */
+    padding-left: 0;
+    margin-left: 0;
 }
 
-/* ===== ENLACES GENERALES ===== */
-a {
-    text-decoration: none;
-}
-
-/* ===== CONTENEDOR DE BOTONES ===== */
+/* ===== BOTONES ===== */
 .botones {
     margin-top: 40px;
     display: flex;
-    gap: 40px;                 
+    flex-wrap: wrap; /* Permite que bajen si no caben en móviles */
+    gap: 20px;
 }
 
-/* ===== BOTONES IGUALES ===== */
 .btn {
     padding: 12px 22px;
-    min-width: 140px;        
+    min-width: 140px;
     text-align: center;
-
     background-color: #2563eb;
     color: #ffffff;
     font-weight: bold;
     font-size: 16px;
-    text-decoration: none;
     border-radius: 8px;
-
+    text-decoration: none;
     transition: background-color 0.3s ease, transform 0.1s ease;
 }
 
-/* Hover */
 .btn:hover {
     background-color: #1e40af;
 }
 
-/* Click */
 .btn:active {
     transform: scale(0.97);
+}
+
+/* ===== FOOTER ===== */
+footer {
+    margin-top: 50px;
+    padding-top: 15px;
+    border-top: 1px solid #d1d5db;
+    text-align: center;
+    font-size: 12px;
+    color: #6b7280;
+}
+
+footer p {
+    margin-bottom: 5px;
+}
+
+footer a {
+    font-size: 12px;
+    color: #89379c;
+    text-decoration: none;
+    margin: 0 6px;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
 
 /* ===== RESPONSIVE ===== */
@@ -118,26 +132,10 @@ a {
     }
 
     .botones {
-        gap: 25px;
-    }
-
-    footer {
-        background-color: #f2f2f2;
-        text-align: center;
-        padding: 15px;
-        margin-top: 30px;
-        font-size: 14px;
-        color: #333;
-        border-top: 2px solid #ccc;
+        gap: 15px;
     }
     
-    footer a {
-        color: #89379c;
-        text-decoration: none;
-        margin: 0 5px;
-    }
-    
-    footer a:hover {
-        text-decoration: underline;
+    .btn {
+        width: 100%; /* Botones de ancho completo en móvil */
     }
 }
